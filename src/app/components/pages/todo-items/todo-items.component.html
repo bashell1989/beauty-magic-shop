@@ -1,0 +1,23 @@
+<h4>
+    <!--  {{ 'Time: ' + getDate() }} -->
+    <h4>
+
+        <input class="input_todo" type="text" [(ngModel)]="todoText" [placeholder]="placeholderText" />
+        <button class="button" (click)="addTodo($event)">增加</button>
+        <p></p>
+
+        <ul>
+            <li *ngFor="let item of items">
+                <label htmlFor="chk_{{item.id}}">
+        <input id="chk_{{item.id}}" type="checkbox" [(ngModel)]="item.done" (click)="chkItem(item)"> {{ item.value }}
+      </label> |
+                <a (click)="delItem(item)">刪除</a>
+                <span *ngIf="item.done">(已完成)</span>
+            </li>
+        </ul>
+
+        <!--
+<ul>
+  <li><label for="chk_1"><input id="chk_1" type="checkbox">Todo Item 1</label> | <a href="#">刪除</a></li>
+</ul>
+-->

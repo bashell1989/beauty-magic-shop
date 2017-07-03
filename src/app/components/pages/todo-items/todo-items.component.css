@@ -1,0 +1,21 @@
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input_todo {
+    width: 45%;
+    padding: 4px 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
